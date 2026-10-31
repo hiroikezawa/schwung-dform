@@ -1,0 +1,62 @@
+{
+  "title": "DFORM",
+  "children": [
+    {
+      "title": "Playing",
+      "lines": [
+        "Plays itself: one hit",
+        "every 1/16 while Move",
+        "plays. Silent when",
+        "stopped. No notes needed."
+      ]
+    },
+    {
+      "title": "Knobs",
+      "lines": [
+        "1 VOLUME (not recorded)",
+        "2 VCF DECAY 80ms-2.5s",
+        "3 P.ENV pitch sweep",
+        "4 FM AMOUNT VCO1>VCO2",
+        "5 P.DEC sweep decay",
+        "6 CUTOFF ladder 25Hz-16k",
+        "7 RES/DRIVE macro",
+        "8 PITCH scale notes C1-C5"
+      ]
+    },
+    {
+      "title": "Touch automation",
+      "lines": [
+        "REC pad on, touch a knob",
+        "on Play: writes while",
+        "touched, 8 points/16th.",
+        "Release: plays back.",
+        "Shift+touch: clear knob",
+        "Shift+touch VOL: clear all"
+      ]
+    },
+    {
+      "title": "Page 2 (Tone)",
+      "lines": [
+        "VCA DECAY 50ms-2s",
+        "VCF ENV 0-7 oct",
+        "VCO2 TN, VCO2, NOISE"
+      ]
+    },
+    {
+      "title": "Page 3/4",
+      "lines": [
+        "Scale: ROOT, SCALE",
+        "Motion: LENGTH 1/2-4 bars"
+      ]
+    },
+    {
+      "title": "Pads",
+      "lines": [
+        "Top right: REC on/off",
+        "Next: RANDOM phrase",
+        "Bottom 2 rows: 16 trigs",
+        "White = playing step"
+      ]
+    }
+  ]
+}

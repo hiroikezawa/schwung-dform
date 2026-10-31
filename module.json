@@ -1,0 +1,220 @@
+{
+  "id": "dform",
+  "name": "DFORM",
+  "abbrev": "DFORM",
+  "version": "0.1.1",
+  "description": "Auto 1/16 analog-style percussion (2 VCO + FM + ladder) played by touch-recorded knob motion",
+  "author": "Hiro Ikezawa",
+  "api_version": 2,
+  "dsp": "dsp.so",
+  "ui_chain": "ui_chain.js",
+  "component_type": "sound_generator",
+  "capabilities": {
+    "component_type": "sound_generator",
+    "chainable": true,
+    "audio_in": false,
+    "audio_out": true,
+    "midi_in": true,
+    "midi_out": false,
+    "chain_params": [
+      {
+        "key": "volume",
+        "name": "Volume",
+        "short_name": "VOLUME",
+        "type": "float",
+        "min": 0,
+        "max": 1,
+        "step": 0.01,
+        "default": 0.75,
+        "unit": "%"
+      },
+      {
+        "key": "vcf_decay",
+        "name": "VCF Decay",
+        "short_name": "VCF DEC",
+        "type": "float",
+        "min": 0,
+        "max": 1,
+        "step": 0.01,
+        "default": 0.6,
+        "unit": "%"
+      },
+      {
+        "key": "vca_decay",
+        "name": "VCA Decay",
+        "short_name": "VCA DEC",
+        "type": "float",
+        "min": 0,
+        "max": 1,
+        "step": 0.01,
+        "default": 0.55,
+        "unit": "%"
+      },
+      {
+        "key": "fm_amount",
+        "name": "FM Amount",
+        "short_name": "FM AMT",
+        "type": "float",
+        "min": 0,
+        "max": 1,
+        "step": 0.01,
+        "default": 0.25,
+        "unit": "%"
+      },
+      {
+        "key": "vcf_env",
+        "name": "VCF Env Amount",
+        "short_name": "VCF ENV",
+        "type": "float",
+        "min": 0,
+        "max": 1,
+        "step": 0.01,
+        "default": 0.6,
+        "unit": "%"
+      },
+      {
+        "key": "cutoff",
+        "name": "Cutoff",
+        "short_name": "CUTOFF",
+        "type": "float",
+        "min": 0,
+        "max": 1,
+        "step": 0.01,
+        "default": 0.35,
+        "unit": "%"
+      },
+      {
+        "key": "reso_drive",
+        "name": "Resonance/Drive",
+        "short_name": "RES/DRV",
+        "type": "float",
+        "min": 0,
+        "max": 1,
+        "step": 0.01,
+        "default": 0.45,
+        "unit": "%"
+      },
+      {
+        "key": "pitch",
+        "name": "Pitch",
+        "short_name": "PITCH",
+        "type": "int",
+        "min": 0,
+        "max": 28,
+        "step": 1,
+        "default": 7
+      },
+      {
+        "key": "root",
+        "name": "Root",
+        "short_name": "ROOT",
+        "type": "enum",
+        "options": [
+          "C",
+          "Db",
+          "D",
+          "Eb",
+          "E",
+          "F",
+          "Gb",
+          "G",
+          "Ab",
+          "A",
+          "Bb",
+          "B"
+        ],
+        "default": 0
+      },
+      {
+        "key": "scale",
+        "name": "Scale",
+        "short_name": "SCALE",
+        "type": "enum",
+        "options": [
+          "Phrygian",
+          "Minor",
+          "Dorian",
+          "Major",
+          "Mixolyd",
+          "Lydian",
+          "Locrian",
+          "HarmMin",
+          "PhrygDom",
+          "MinPent",
+          "In",
+          "Chromatic"
+        ],
+        "default": 0
+      },
+      {
+        "key": "p_env",
+        "name": "Pitch Env",
+        "short_name": "P.ENV",
+        "type": "float",
+        "min": 0,
+        "max": 1,
+        "step": 0.01,
+        "default": 0.35,
+        "unit": "%"
+      },
+      {
+        "key": "p_decay",
+        "name": "Pitch Env Decay",
+        "short_name": "P.DEC",
+        "type": "float",
+        "min": 0,
+        "max": 1,
+        "step": 0.01,
+        "default": 0.45,
+        "unit": "%"
+      },
+      {
+        "key": "vco2_tune",
+        "name": "VCO2 Tune",
+        "short_name": "VCO2 TN",
+        "type": "float",
+        "min": -24,
+        "max": 24,
+        "step": 0.05,
+        "default": 7.3,
+        "unit": "st",
+        "display_format": "%.2f"
+      },
+      {
+        "key": "vco2_level",
+        "name": "VCO2 Level",
+        "short_name": "VCO2",
+        "type": "float",
+        "min": 0,
+        "max": 1,
+        "step": 0.01,
+        "default": 0.6,
+        "unit": "%"
+      },
+      {
+        "key": "noise",
+        "name": "Noise",
+        "short_name": "NOISE",
+        "type": "float",
+        "min": 0,
+        "max": 1,
+        "step": 0.01,
+        "default": 0.05,
+        "unit": "%"
+      },
+      {
+        "key": "length",
+        "name": "Loop Length",
+        "short_name": "LENGTH",
+        "type": "enum",
+        "options": [
+          "1/2 Bar",
+          "1 Bar",
+          "2 Bars",
+          "4 Bars"
+        ],
+        "default": 1
+      }
+    ]
+  }
+}
